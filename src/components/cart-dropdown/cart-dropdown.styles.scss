@@ -20,7 +20,16 @@
       height: 240px;
       display: flex;
       flex-direction: column;
-      // overflow: scroll;
+      overflow-y: scroll; 
+      overflow-x: hidden; 
+    }
+    .cart-items::-webkit-scrollbar {
+      width: 10px; /* Set the width of the scrollbar */
+    }
+    
+    .cart-items::-webkit-scrollbar-thumb {
+      background-color: #888; /* Color of the thumb */
+      border-radius: 12px; /* Round the corners of the thumb */
     }
   
     button {
